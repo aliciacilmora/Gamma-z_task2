@@ -21,7 +21,7 @@ RUN apt install nano
 RUN apt install vi
 
 #appending the text files to ~/.bashrc
-CMD cat FeeBreakup.txt >> ~/.bashrc genstudent.txt >> ~/.bashrc messAllocation.txt >> ~/.bashrc permit.txt >> ~/.bashrc updateDefaulter.txt >> ~/.bashrc
+CMD cat /path/FeeBreakup.txt >> ~/.bashrc /path/genstudent.txt >> ~/.bashrc /path/messAllocation.txt >> ~/.bashrc /path/permit.txt >> ~/.bashrc /path/updateDefaulter.txt >> ~/.bashrc
 
 RUN feeBreakup
 RUN genStudent
