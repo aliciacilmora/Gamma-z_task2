@@ -1,0 +1,12 @@
+#TO GET THE OFFICIAL IMGE OF POSTGRESQL
+FROM postgres:latest
+
+#SETTING UP THE ENVIRONMENT VARIABLES
+ENV POSTGRES_USER: user
+ENV POSTGRES_PASSWORD: password
+ENV POSTGRES_DB: student_database
+
+#COPING THE SQL FILE CONTAINING THE TABLE
+COPY init.sql /docker-entrypoint-initdb.d/
+
+CMD [ "/bin/bash" ]
