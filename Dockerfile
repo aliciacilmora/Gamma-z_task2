@@ -32,5 +32,5 @@ RUN messAllocation
 CMD ["/bin/bash"]
 
 #After that we need to save the file using this command given below
-#In the same directory as the docker file use  $docker build -t name_of_docker_imamge
-#docker run -it name_of_docker_image
+#In the same directory as the docker file use  $docker build -t task2.image
+#docker run -it task2.image
