@@ -4,7 +4,7 @@ FROM ubuntu
 RUN apt-get update 
 
 #coping all the files to the container
-COPY feeBreakup.txt /path/
+COPY feeBreakup.txt /path/ 
 COPY FeeBreakup.txt /path/
 COPY genstudent.txt /path/
 COPY mess.txt /path/
