@@ -1,0 +1,15 @@
+$sudo a2enmod proxy
+$sudo a2enmod proxy_ttp
+$sudo systemctl restart apache2
+
+$sudo a2disite default.conf
+$sudo mv proxy.conf /etc/apache2/sites-available
+$sudo a2ensite proxy.conf 
+
+#proxy.conf has been provided
+
+$cd /var/www/html
+
+#Modify 127.0.0.1 with gammaz.hm
+
+$sudo systemctl reload apache2
