@@ -5,7 +5,7 @@ services:
                       context: .
                       dockerfile: server.dockerfile
                ports: 
-                  - "330:5432"
+                  - "3300:5432"
                volumes:
                   - ./data:/var/lib/postresql/data
                
