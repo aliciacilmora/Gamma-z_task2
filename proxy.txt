@@ -1,5 +1,5 @@
 $sudo a2enmod proxy
-$sudo a2enmod proxy_ttp
+$sudo a2enmod proxy_http
 $sudo systemctl restart apache2
 
 $sudo a2disite default.conf
